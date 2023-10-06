@@ -211,7 +211,7 @@ XAMPP:  Done.
 9. Create the htcaas wiki database (e.g., htcwikidb) with utf8_general_ci.
 <br/><br/>
 <p align="center">
-  <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/90b5ca5b-4032-45a5-ae42-5ecfa368f9cb" height="300">
+  <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/90b5ca5b-4032-45a5-ae42-5ecfa368f9cb">
 </p>
 10. Create the htcwikidb tables by importing the HTCaaS Wiki sql file (i.e., htcwikidb_2023-09-06.sql.gz)
 <br/><br/>
