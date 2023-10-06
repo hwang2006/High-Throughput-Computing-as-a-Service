@@ -205,7 +205,7 @@ XAMPP:  Done.
 8. access the phpmyadmin page (http://your-ubuntu-instance-public-ip-address/phpmyadmin) using the MySQL root account.
 
 <p align="center">
-  <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/0755728a-5c7b-48f8-913d-f4431b0d3e4d" height="300">
+  <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/6c0fa833-ab1c-4381-9251-3a1caece370a" height="300">
 </p>
 9. create the htcaas wiki database (e.g., htcwikidb) with utf8_general_ci.
 
