@@ -150,7 +150,7 @@ XAMPP: Starting ProFTPD...ok.
 5. Open your browser and access http://your-ubuntu-instance-public-ip-address. You will have the XAMPP dashboard page. Click the phyMyAdmin tab on the right top of the dashboard page or access http://your-ubuntu-instance-public-ip-address/phpmyadmin. You will find the following Access forbidden screen.
 
 <p align="center">
-  <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/4c64e502-4a1b-4149-8c06-69224e11e39b" height="300">
+  <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/0b2b5026-8592-4415-b989-fc1877cc8dfb" height="300">
 </p>
 
 6. Edit the XAMPP configuration file. Replace the "local" with "all granted" in the /opt/lampp/etc/extra/httpd-xampp.conf file and restart it.
