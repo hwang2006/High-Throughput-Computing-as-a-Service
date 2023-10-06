@@ -218,11 +218,11 @@ XAMPP:  Done.
 
 
 <p align="center">
-  <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/040e96e0-c2d4-447d-a51b-fb07605b8a97" height="300">
+  <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/def481ee-bc80-418b-b813-395f5325c9b9" height="300">
 </p>
 
 <p align="center">
-  <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/c0e72715-6bc7-4a78-b331-777544358582" height="300">
+  <img src="" height="300">
 </p>
 
 11. copy the htcwiki directory into xampp server directory.
