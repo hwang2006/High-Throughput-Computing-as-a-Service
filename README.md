@@ -3,6 +3,8 @@
 High-Throughput Computing (HTC) consists of running many loosely-coupled tasks that are independent (there is no communication needed between them) but requires a large amount of computing power during relatively a long period of time. Middleware systems such as Condor or BOINC have successfully achieved a tremendous computing power by harnessing a large number of computing resources. However, as umber of jobs and the complexity of scientific applications increase, it becomes a challenge for the traditional middleware systems employing typically a single type of resources (e.g., clusters of workstations, desktop machines over Internet) to solve the given scientific problem within a reasonable amount of time. 
 
 Therefore, to effectively support complex and demanding scientific applications, it is inevitable to harness as many computing resources as possible including Supercomputers, Grids, and even Cloud. However, it is challenging for researchers to effectively utilize available resources that are under control by independent resource providers as the number of jobs (that should be submitted at once) increase dramatically (as in parameter sweeps or N-body calculations).
+
+Please visit the [HTCaaS Wiki Homepage](http://htcaas.kisti.re.kr) deployed on AWS EC2. 
  
 ## How to set up the HTCaaS Wiki Homepage on an Apache web server running PHP 5.6+MySQL on AWS EC2
 
