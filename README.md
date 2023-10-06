@@ -247,7 +247,13 @@ $wgDBuser           = "root";
 $wgDBpassword       = "**********";
 ...
 ```
-13. Edit the index.php file in the /opt/lampp/htdocs. Replace the /dashboard/ with /htcwiki/.
+13. Edit the permission of some of the lampp server directory to be writable.
+```
+ubuntu@ip-172-31-32-76:~$ sudo chmod 777 /opt/lampp/htdocs/htcwiki
+
+ubuntu@ip-172-31-32-76:~$ sudo chmod -R 777 /opt/lampp/htdocs/htcwiki/images /opt/lampp/htdocs/htcwiki/cache
+```
+14. Edit the index.php file in the /opt/lampp/htdocs. Replace the /dashboard/ with /htcwiki/.
 ```
 ubuntu@ip-172-31-32-76:~$ cat /opt/lampp/htdocs/index.php
 <?php
@@ -262,10 +268,10 @@ ubuntu@ip-172-31-32-76:~$ cat /opt/lampp/htdocs/index.php
 ?>
 Something is wrong with the XAMPP installation :-(
 ```
-14. restart the lampp server
+15. restart the lampp server
 ```
 ubuntu@ip-172-31-32-76:~$ sudo /opt/lampp/lampp restart
 ```
-15. Accecc the HTCaaS Wiki Website (http://your-ubuntu-instance-public-ip-address) that you have just deployed on AWS EC2. Congratulation!!!
+16. Accecc the HTCaaS Wiki Website (http://your-ubuntu-instance-public-ip-address) that you have just deployed on AWS EC2. Congratulation!!!
 
 
