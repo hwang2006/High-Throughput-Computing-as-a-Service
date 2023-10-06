@@ -266,6 +266,6 @@ Something is wrong with the XAMPP installation :-(
 ```
 ubuntu@ip-172-31-32-76:~$ sudo /opt/lampp/lampp restart
 ```
-15. Accecc the HTCaaS Wiki Homepage (http://your-ubuntu-instance-public-ip-address) that you have just deployed. Congratulation!!!
+15. Accecc the HTCaaS Wiki Website (http://your-ubuntu-instance-public-ip-address) that you have just deployed on AWS EC2. Congratulation!!!
 
 
