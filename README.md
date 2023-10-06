@@ -222,7 +222,7 @@ XAMPP:  Done.
 </p>
 
 <p align="center">
-  <img src="" height="300">
+  <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/b684b86d-2f12-4a75-9136-863a4c9f3ba6" height="300">
 </p>
 
 11. copy the htcwiki directory into xampp server directory.
