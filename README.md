@@ -126,7 +126,7 @@ apache2             error         info             logs                   pear  
 bin                 etc           killprocess.bat  man                    php         temp
 build               htdocs        lampp            manager-linux-x64.run  phpmyadmin  uninstall
 ```
-4. Run XAMPP.
+4. Run the XAMPP (lampp) server 
 ```
 ubuntu@ip-172-31-32-76:~$ sudo /opt/lampp/lampp start
 Starting XAMPP for Linux 5.6.40-1...
@@ -266,4 +266,6 @@ Something is wrong with the XAMPP installation :-(
 ```
 ubuntu@ip-172-31-32-76:~$ sudo /opt/lampp/lampp restart
 ```
+15. Accecc the HTCaaS Wiki Homepage (http://your-ubuntu-instance-public-ip-address) that you have just deployed. Congratulation!!!
+
 
