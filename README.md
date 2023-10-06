@@ -203,20 +203,16 @@ XAMPP: Do you want to change the password? [yes] no   <=== type no
 XAMPP:  Done.
 ```
 8. Access the phpmyadmin page (http://your-ubuntu-instance-public-ip-address/phpmyadmin) using the MySQL root account.
-
 <p align="center">
   <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/6c0fa833-ab1c-4381-9251-3a1caece370a" height="300">
 </p>
 9. Create the htcaas wiki database (e.g., htcwikidb) with utf8_general_ci.
-
-
-
+<br/><br/>
 <p align="center">
   <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/90b5ca5b-4032-45a5-ae42-5ecfa368f9cb" height="300">
 </p>
 10. Create the htcwikidb tables by importing the HTCaaS Wiki sql file (i.e., htcwikidb_2023-09-06.sql.gz)
-
-
+<br/><br/>
 <p align="center">
   <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/def481ee-bc80-418b-b813-395f5325c9b9" height="300">
 </p>
@@ -225,14 +221,14 @@ XAMPP:  Done.
   <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/b684b86d-2f12-4a75-9136-863a4c9f3ba6" height="300">
 </p>
 
-11. Copy the htcwiki directory into xampp server directory.
+11. Copy the htcwiki directory into the lampp server directory.
 ```
 ubuntu@ip-172-31-32-76:~$ sudo cp -r /home/ubuntu/high-throughput-computing-as-a-service/htcwiki /opt/lampp/htdocs
 
 ubuntu@ip-172-31-32-76:~$ ls /opt/lampp/htdocs
 applications.html  bitnami.css  dashboard  favicon.ico  htcwiki  img  index.php  webalizer
 ```
-12. Edit the LocalSettings.php file in the /opt/lampp/htdocs/htcwiki directory and restart the lampp server.
+12. Edit the LocalSettings.php file in the /opt/lampp/htdocs/htcwiki directory.
 ```
 ubuntu@ip-172-31-32-76:~$ sudo vi /opt/lampp/htdocs/htcwiki/LocalSettings.php
 ...
@@ -248,7 +244,24 @@ $wgDBname           = "htcwikidb";   <=== the htcaas_wiki database name that you
 $wgDBuser           = "root";
 $wgDBpassword       = "**********";
 ...
-
+```
+13. Edit the index.php file in the /opt/lampp/htdocs. Replace the /dashboard/ with /htcwiki/.
+```
+ubuntu@ip-172-31-32-76:~$ cat /opt/lampp/htdocs/index.php
+<?php
+        if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
+                $uri = 'https://';
+        } else {
+                $uri = 'http://';
+        }
+        $uri .= $_SERVER['HTTP_HOST'];
+        header('Location: '.$uri.'/htcwiki/');   <=== instead of header('Location: '.$uri.'/dashboard/');
+        exit;
+?>
+Something is wrong with the XAMPP installation :-(
+```
+14. restart the lampp server
+```
 ubuntu@ip-172-31-32-76:~$ sudo /opt/lampp/lampp restart
 ```
 
