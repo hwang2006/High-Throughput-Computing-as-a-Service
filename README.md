@@ -164,7 +164,7 @@ Alias /phpmyadmin "/opt/lampp/phpmyadmin"
 # since XAMPP 1.4.3
 <Directory "/opt/lampp/phpmyadmin">
     AllowOverride AuthConfig Limit
-    Require all granted 
+    Require all granted   
     ErrorDocument 403 /error/XAMPP_FORBIDDEN.html.var
 </Directory>
 ...
@@ -188,12 +188,14 @@ XAMPP:  Turned off.
 XAMPP: Stopping MySQL...ok.
 XAMPP: Starting MySQL...ok.
 XAMPP:  The MySQL/phpMyAdmin user pma has no password set!!! 
-XAMPP: Do you want to set a password? [yes] no   <=== type no
-XAMPP:  MySQL has no root passwort set!!! 
 XAMPP: Do you want to set a password? [yes] yes   <=== type yes
-XAMPP:  Write the password somewhere down to make sure you won't forget it!!! 
 XAMPP: Password: *********
-XAMPP: Password (again): *********
+XAMPP: Password (again): **********
+XAMPP:  MySQL has no root passwort set!!! 
+XAMPP: Do you want to set a password? [yes] yes   <=== type yes 
+XAMPP:  Write the password somewhere down to make sure you won't forget it!!! 
+XAMPP: Password: **********
+XAMPP: Password (again): **********
 XAMPP:  Setting new MySQL root password.
 XAMPP:  Change phpMyAdmin's authentication method.
 XAMPP:  The FTP password for user 'daemon' is still set to 'xampp'. 
