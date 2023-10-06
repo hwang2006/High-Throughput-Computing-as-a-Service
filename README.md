@@ -178,7 +178,7 @@ XAMPP: Starting Apache...ok.
 XAMPP: Starting MySQL...ok.
 XAMPP: Starting ProFTPD...ok.
 ```
-7. configure some XAMPP security settings.
+7. Configure some XAMPP security settings.
 ```
 ubuntu@ip-172-31-32-76:~$  sudo /opt/lampp/xampp security
 XAMPP:  Quick security check...
@@ -202,12 +202,12 @@ XAMPP:  The FTP password for user 'daemon' is still set to 'xampp'.
 XAMPP: Do you want to change the password? [yes] no   <=== type no
 XAMPP:  Done.
 ```
-8. access the phpmyadmin page (http://your-ubuntu-instance-public-ip-address/phpmyadmin) using the MySQL root account.
+8. Access the phpmyadmin page (http://your-ubuntu-instance-public-ip-address/phpmyadmin) using the MySQL root account.
 
 <p align="center">
   <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/6c0fa833-ab1c-4381-9251-3a1caece370a" height="300">
 </p>
-9. create the htcaas wiki database (e.g., htcwikidb) with utf8_general_ci.
+9. Create the htcaas wiki database (e.g., htcwikidb) with utf8_general_ci.
 
 
 
@@ -225,11 +225,27 @@ XAMPP:  Done.
   <img src="https://github.com/hwang2006/high-throughput-computing-as-a-service/assets/84169368/b684b86d-2f12-4a75-9136-863a4c9f3ba6" height="300">
 </p>
 
-11. copy the htcwiki directory into xampp server directory.
+11. Copy the htcwiki directory into xampp server directory.
 ```
 ubuntu@ip-172-31-32-76:~$ sudo cp -r /home/ubuntu/high-throughput-computing-as-a-service/htcwiki /opt/lampp/htdocs
 
 ubuntu@ip-172-31-32-76:~$ ls /opt/lampp/htdocs
 applications.html  bitnami.css  dashboard  favicon.ico  htcwiki  img  index.php  webalizer
 ```
-12. 
+12. Edit the LocalSettings.php file in the /opt/lampp/htdocs/htcwiki directory.
+```
+ubuntu@ip-172-31-32-76:~$ sudo vi /opt/lampp/htdocs/htcwiki/LocalSettings.php
+...
+## The protocol and server name to use in fully-qualified URLs
+#$wgServer           = "http://htcaas.kisti.re.kr";
+$wgServer           = "http://your-ubuntu-instance-public-ip-address";
+...
+## Database settings
+$wgDBtype           = "mysql";
+$wgDBserver         = "localhost";
+#$wgDBname           = "mediawiki";
+$wgDBname           = "htcwikidb";   <=== the htcaas_wiki database name that you have created 
+$wgDBuser           = "root";
+$wgDBpassword       = "**********";
+...
+```
