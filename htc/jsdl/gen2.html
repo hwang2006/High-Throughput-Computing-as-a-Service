@@ -1,0 +1,157 @@
+<html>
+<body scroll="yes">  
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+ document.write('<center><h2> JSDL </h2></br></center>');
+
+var no_options;
+document.write('<table cellspacing="5" cellpadding="5" style="border:2 solid #808080" align="center">');
+document.write('<th colspan =2 > <h4>Step 1</h4></th>');
+document.write('<form name="jsdl_step1">');
+document.write('<tr>');
+document.write('<td>');
+document.write('<b> Application name : </b>'); 
+document.write('</td>');
+document.write('<td>');
+document.write('<input type="text" name="app_name" value="general" size="20" maxlength="20">'); 
+document.write('</td></tr>');
+
+document.write('<tr>');
+document.write('<td>');
+document.write('<b> Executable name: </b>'); 
+document.write('</td>');
+document.write('<td>');
+document.write('<input type="text" name="exe_name" value="example.sh" size="30" maxlength="30">'); 
+document.write('</td></tr>');
+
+//Input
+document.write('<tr><td>');
+document.write('<b> Num of Input files: </b>'); 
+document.write('</td>');
+document.write('<td>');
+document.write('<select name="num_input" style="font-size:9pt" onchange="javascript:showItems(this.document.jsdl_step1.num_input.value,1)">');
+ for(var i=0; i<=30; i++) // 만들 수 있는 file 개수
+ {   document.write('<option value="' + i + '">' + i + '</option>');   }
+  document.write('</select>&nbsp; ');
+document.write('</td></tr>');
+
+//output
+document.write('<tr><td>');
+document.write('<b> Num of output files: </b>'); 
+document.write('</td>');
+document.write('<td>');
+document.write('<select name="num_output" style="font-size:9pt" onchange="javascript:showItems(this.document.jsdl_step1.num_output.value,2)">');
+ for(var i=0; i<=30; i++) // 만들 수 있는  file 개수
+ {    document.write('<option value="' + i + '">' + i + '</option>');   }
+  document.write('</select>&nbsp; ');
+document.write('</td></tr>');
+
+//arguments
+document.write('<tr><td>');
+document.write('<b> Num of arguments: </b>'); 
+document.write('</td>');
+document.write('<td>');
+document.write('<select name="num_args" style="font-size:9pt" onchange="javascript:showItems2(this.document.jsdl_step1.num_input.value)">');
+ for(var i=0; i<=30; i++) // 만들 수 있는  file 개수
+ {   document.write('<option value="' + i + '">' + i + '</option>');   }
+  document.write('</select>&nbsp; ');
+document.write('</td></tr>');
+document.write('</form>');
+document.write('</table><br>');
+
+
+//(스텝2)
+document.write('<table cellspacing="5" cellpadding="5" style="border:2 solid #808080" align="center" style="width:550px">');
+document.write('<th colspan =2 > <h4>Step 2</h4></th>');
+document.write('<tr><td>');
+
+///input(step2)///
+document.write('<center><h3>Input </h3></center>');
+document.write('<center><div id="items">');
+
+document.write('</div><br></center>');
+
+
+//output(step2)////
+document.write('<center><h3>Output </h3></center>');
+document.write('<center><div id="item2">');
+
+document.write('</div><br></center>');
+
+//arguments(step2)////
+document.write('<center><h3>Arguments </h3></center>');
+document.write('<center><div id="item3">');
+
+document.write('</div>  <br></center>');
+
+document.write('</td></tr>');
+document.write('</table>');
+
+
+
+//function
+function showItems(n,m)
+{
+ var item_disp = "";
+ for(var i=0; i<n; i++)
+ {
+ item_disp += 'name : <input type="text" size="12" name="option' + (i+1) + '" style="height:20; border:1 solid #000000">&nbsp;&nbsp;';
+ item_disp += 'location : <input type="text" size="30" name="linkto' + (i+1) + '" style="height:20; border:1 solid #000000"><br>';
+ }
+ no_options=n; 
+ 
+ if (m==1) {  this.document.all.items.innerHTML = item_disp;
+ } else if (m==2) {  
+     this.document.all.item2.innerHTML = item_disp;
+ } else {  this.document.all.item3.innerHTML = item_disp; }
+
+ }
+
+
+//function
+function showItems2(n)
+{
+ var item_disp = "";
+var m = 4
+ for(var i=0; i<n; i++)
+ {
+ item_disp += 'name : <input type="text" size="12" name="option' + (i+1) + '" style="height:20; border:1 solid #000000">&nbsp;&nbsp;';
+ item_disp += 'location : <input type="text" size="30" name="linkto' + (i+1) + '" style="height:20; border:1 solid #000000"><br>';
+ }
+ no_options=n; 
+ 
+ if (m==1) {  this.document.all.items.innerHTML = item_disp;
+ } else if (m==2) {  
+     this.document.all.item2.innerHTML = item_disp;
+ } else {  this.document.all.item3.innerHTML = item_disp; }
+
+ }
+
+/*
+//  for argument selection
+function showItems2(n)
+{
+ var item_disp = "";
+ for(var i=0; i<n; i++)
+ { 
+ item_disp += 'name : <input type="text" size="12" name="option' + (i+1) + '" style="height:20; border:1 solid #000000">&nbsp;&nbsp;';
+ /*item_disp += 'type : <select name="num_input" style="font-size:9pt" >;'; 
+ item_disp +=  '<option value="indep'+ (i+1) + '" > INDEPENDENT </option>;'; 
+ item_disp +=  '<option value="loop'+ (i+1) + '" > LOOP </option></select>&nbsp;';  
+ }
+ no_options=n; 
+ 
+  this.document.all.item3.innerHTML = item_disp; 
+
+  }
+
+*/
+
+  
+ document.write(' </body> </html>');
+</script>
+
+
+   
+   </body>
+  </html> 

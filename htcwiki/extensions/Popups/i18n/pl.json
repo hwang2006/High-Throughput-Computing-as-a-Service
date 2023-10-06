@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps",
+			"Peter Bowman",
+			"Rezonansowy",
+			"WTM",
+			"Ty221"
+		]
+	},
+	"popups-message": "Wyskakujące okienka",
+	"popups-desc": "Wyświetla wyskakujące okienka z podsumowaniem treści strony docelowej po umieszczeniu wskaźnika myszy na odnośniku.",
+	"popups-last-edited": "Ostatnio edytowane $1",
+	"popups-redirects": "przekierowuje do<h3>$1</h3>",
+	"popups-settings-title": "Podgląd strony",
+	"popups-settings-description": "To narzędzie umożliwia szybki podgląd niebieskich linków i odsyłaczy do przypisów",
+	"popups-settings-option-simple": "Prosty",
+	"popups-settings-option-advanced": "Zaawansowany",
+	"popups-settings-option-off": "Wyłącz podgląd",
+	"popups-settings-option-off-description": "Można zmienić to ustawienie za pomocą linku w stopce strony",
+	"popups-settings-save": "Zapisz",
+	"popups-settings-cancel": "Anuluj",
+	"popups-settings-enable": "Włącz wyskakujące okienka"
+}

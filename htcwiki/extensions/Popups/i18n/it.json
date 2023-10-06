@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"popups-message": "Popup",
+	"popups-desc": "Mostra un popup con un estratto del contenuto quando l'utente passa sopra al collegamento ad una pagina.",
+	"popups-last-edited": "Ultima modifica $1",
+	"popups-redirects": "reindirizza a <h3>$1</h3>",
+	"popups-settings-title": "Anteprima pagina",
+	"popups-settings-description": "Questo strumento ti consente vedere un'anteprima dei collegamenti blu e dei riferimenti",
+	"popups-settings-option-simple": "Semplice",
+	"popups-settings-option-simple-description": "Vedi la frase di introduzione di una voce e un'immagine di anteprima. Questo è consigliato per i lettori.",
+	"popups-settings-option-advanced": "Avanzata",
+	"popups-settings-option-advanced-description": "Vedi un'anteprima dei collegamenti e ha accesso al menu delle funzioni di modifica. Questo è usato da molti editori.",
+	"popups-settings-option-off": "Disattiva anteprime",
+	"popups-settings-option-off-description": "Puoi modificare questa impostazione usando il collegamento in fondo alla pagina",
+	"popups-settings-save": "Salva",
+	"popups-settings-cancel": "Annulla",
+	"popups-settings-enable": "Attiva anteprime"
+}

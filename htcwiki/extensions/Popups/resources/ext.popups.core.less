@@ -1,0 +1,279 @@
+@import "mediawiki.mixins.less";
+
+/* Code adapted from Yair Rand's NavPopupsRestyled.js
+ * https://en.wikipedia.org/wiki/User:Yair_rand/NavPopupsRestyled.js
+ */
+
+.mwe-popups-border-triangle-top(@size, @left, @color) {
+	content: '';
+	position: absolute;
+	border: @size solid transparent;
+	border-top: 0;
+	border-bottom: @size solid @color;
+	top: -@size;
+	/* @noflip */
+	left: @left;
+}
+
+.mwe-popups-border-triangle-bottom(@size, @left, @color) {
+	content: '';
+	position: absolute;
+	border: @size solid transparent;
+	border-bottom: 0;
+	border-top: @size solid @color;
+	bottom: -@size;
+	/* @noflip */
+	left: @left;
+}
+
+.mwe-popups {
+	position: absolute;
+	z-index: 5;
+	background: #fff;
+	border: 1px solid #bbb;
+	padding: 0;
+	display: none;
+	font-size: 15px;
+	line-height: 24px;
+	min-width: 300px;
+
+	> div {
+		display: block;
+		margin-top: -9px;
+		padding-top: 9px;
+		color: #000;
+		text-decoration: none;
+
+		> div {
+			padding: 0;
+			margin: 16px;
+			padding-bottom: 48px;
+		}
+
+		> div.mwe-popups-is-tall {
+			margin: 0;
+			height: 250px;
+			width: 200px;
+			padding: 0;
+			background-size: cover;
+			background-repeat: no-repeat;
+			overflow: hidden;
+			/* @noflip */
+			float: right;
+		}
+
+		> div.mwe-popups-is-not-tall {
+			margin: 0;
+			height: 200px;
+			width: 300px;
+			padding: 0;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			overflow: hidden;
+			/* @noflip */
+			float: right;
+		}
+
+		> div.mwe-popups-timestamp-older, div.mwe-popups-timestamp-recent {
+			padding: 16px;
+			margin: 0;
+			font-size: 13px;
+			position: absolute;
+			bottom: 0;
+			/* @noflip */
+			left: 0;
+		}
+
+		> div.mwe-popups-timestamp-older {
+			color: #555;
+		}
+
+		> div.mwe-popups-timestamp-recent {
+			color: #00af89;
+		}
+
+		.mwe-popups-settings-icon {
+			display: inline-block;
+			cursor: pointer;
+			margin-left: 5px;
+			height: 16px;
+			width: 16px;
+			.background-image-svg( "gear_gray.svg", "gear_gray.png" );
+		}
+	}
+
+	.mwe-popups-extract {
+		margin: 0;
+		padding: 16px;
+		display: block;
+		color: #000;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&.mwe-popups-is-tall {
+		width: 450px;
+
+		> div > a > svg {
+			margin-bottom: -5px;
+		}
+
+		.mwe-popups-extract {
+			width: 215px;
+			height: 125px;
+			overflow: hidden;
+			/* @noflip */
+			float: left;
+		}
+
+		div.mwe-popups-timestamp-older, div.mwe-popups-timestamp-recent {
+			width: 215px;
+		}
+	}
+
+	&.mwe-popups-is-not-tall {
+		width: 300px;
+
+		.mwe-popups-extract {
+			max-height: 125px;
+			overflow: hidden;
+			margin-bottom: 47px;
+			padding-bottom: 0;
+		}
+
+		div.mwe-popups-timestamp-older, div.mwe-popups-timestamp-recent {
+			width: 270px;
+		}
+	}
+
+	/* Triangles/Pokeys */
+	&.mwe-popups-no-image-tri {
+		&:after {
+			.mwe-popups-border-triangle-top( 7px, 11px, #fff);
+		}
+
+		&:before {
+			.mwe-popups-border-triangle-top( 8px, 10px, #bbb);
+		}
+	}
+
+	&.flipped_x.mwe-popups-no-image-tri {
+		&:after {
+			/* @noflip */
+			left: auto;
+			/* @noflip */
+			right: 11px;
+		}
+
+		&:before {
+			/* @noflip */
+			left: auto;
+			/* @noflip */
+			right: 10px;
+		}
+	}
+
+	&.mwe-popups-image-tri {
+		&:before {
+			z-index: 90;
+			.mwe-popups-border-triangle-top(9px, 9px, #bbb);
+		}
+
+		&:after {
+			.mwe-popups-border-triangle-top(8px, 10px, #fff);
+			z-index: 91;
+		}
+
+		&.flipped_x {
+			&:before {
+				z-index: 90;
+				.mwe-popups-border-triangle-top(9px, 273px, #bbb);
+			}
+
+			&:after {
+				.mwe-popups-border-triangle-top(8px, 273px, #fff);
+				z-index: 91;
+			}
+		}
+
+		.mwe-popups-extract {
+			padding-top: 32px;
+			margin-top: 190px;
+		}
+
+		> div > a > svg {
+			margin-top: -8px;
+			position: absolute;
+			z-index: 100;
+			/* @noflip */
+			left: 0;
+		}
+	}
+
+	&.flipped_x.mwe-popups-is-tall {
+		min-height: 242px;
+
+		&:before {
+			z-index: 90;
+			.mwe-popups-border-triangle-top(9px, 420px, #bbb);
+		}
+
+		> div > a > svg {
+			margin: 0;
+			margin-top: -8px;
+			margin-bottom: -5px;
+			position: absolute;
+			z-index: 100;
+			/* @noflip */
+			right: 0;
+		}
+	}
+
+	&.flipped_x_y {
+		&:before {
+			z-index: 90;
+			.mwe-popups-border-triangle-bottom(9px, 272px, #bbb);
+		}
+
+		&:after {
+			.mwe-popups-border-triangle-bottom(8px, 273px, #fff);
+			z-index: 91;
+		}
+
+		&.mwe-popups-is-tall {
+			min-height: 242px;
+
+			&:after {
+				border: none;
+			}
+
+			&:before {
+				z-index: 90;
+				.mwe-popups-border-triangle-bottom(9px, 420px, #bbb);
+			}
+
+			> a > svg {
+				position: absolute;
+				z-index: 100;
+				margin: 0;
+				margin-bottom: -9px;
+				/* @noflip */
+				right: 0;
+			}
+		}
+	}
+
+	&.flipped_y {
+		&:after {
+			.mwe-popups-border-triangle-bottom( 7px, 11px, #fff);
+		}
+
+		&:before {
+			.mwe-popups-border-triangle-bottom( 8px, 10px, #bbb);
+		}
+	}
+}

@@ -1,0 +1,89 @@
+div.input-settings-block {
+	/* @embed */
+	background: transparent url('../images/input.png') no-repeat;
+	background-size: 20px auto;
+	/* This is only few pixels off from the below */
+	background-position: 4.5% 0;
+	/* Does not work for RTL
+	background-position-x: 15px;
+	background-position-y: 5px;
+	*/
+	color: #252525;
+	padding-left: 32px;
+	cursor: pointer;
+}
+
+.imelabel {
+	display: block;
+	padding-bottom: 10px;
+	font-size: 10pt;
+	line-height: 16pt;
+}
+
+.imelabel span {
+	padding-left: 5px;
+}
+
+.imelabel input {
+	float: left;
+}
+
+.ime-selector-more-languages:hover {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #5089e8;
+}
+
+.uls-ime-more-settings-link {
+	/* @embed */
+	background: transparent url('../images/cog-16x16-ltr.png') right center no-repeat;
+	background-color: #f0f0f0;
+	border-radius: 0 0 5px 5px;
+	border-top: 1px solid #ddd;
+	margin-top: 6px;
+	padding: 2px 0 2px 0;
+	color: #444;
+}
+
+.uls-ime-more-settings-link > a:hover {
+	background-color: #f0f0f0;
+	color: #000;
+}
+
+.ext-uls-input-settings-imes-title:empty {
+	display:none;
+}
+
+.uls-input-settings-disable-info,
+.uls-input-settings-no-inputmethods {
+	color: #565656;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	font-size: 11pt;
+}
+
+.down+.uls-input-settings-caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: none;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	border-bottom: 8px solid #f0f0f0;
+	content: "";
+	position: relative;
+	vertical-align: bottom;
+	top: 12px;
+	left: -16%;
+	margin: 0 -8px;
+}
+
+.uls-input-settings-toggle {
+	padding-top: 10px;
+}
+
+.uls-input-settings-inputmethods-list {
+	margin: 12px 0;
+	padding: 6px 10px;
+	background: #f0f0f0;
+}

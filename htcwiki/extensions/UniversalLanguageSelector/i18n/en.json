@@ -1,0 +1,42 @@
+{
+"@metadata": {
+	"authors": [
+		"Santhosh Thottingal"
+	],
+	"message-documentation": "qqq"
+},
+"ext-uls-display-settings-title": "Display settings",
+"ext-uls-display-settings-title-short": "Display",
+"ext-uls-display-settings-desc": "Set language used for menus and fonts.",
+"ext-uls-undo-language-tooltip-text": "Language changed from $1",
+"ext-uls-language-settings-title": "Language settings",
+"ext-uls-language-settings-apply": "Apply settings",
+"ext-uls-language-settings-cancel": "Cancel",
+"ext-uls-display-settings-font-settings": "Font settings",
+"ext-uls-display-settings-ui-language": "Language for display",
+"ext-uls-webfonts-settings-title": "Download font when needed",
+"ext-uls-webfonts-settings-info": "Webfonts will be downloaded for displaying text in special scripts.",
+"ext-uls-webfonts-settings-info-link": "More information",
+"ext-uls-webfonts-select-for": "Select font for $1",
+"ext-uls-webfonts-select-for-ui-info": "Font used for user interface",
+"ext-uls-webfonts-select-for-content-info": "Font used for content",
+"ext-uls-back-to-display-settings": "Back to display settings",
+"ext-uls-input-settings-title": "Input settings",
+"ext-uls-input-settings-title-short": "Input",
+"ext-uls-input-settings-desc": "Writing in a different language?",
+"ext-uls-input-settings-ime-settings": "Input methods for $1",
+"ext-uls-input-settings-ui-language": "Language used for writing",
+"ext-uls-back-to-input-settings": "Back to input settings",
+"ext-uls-disable-input-method": "Disable input method",
+"ext-uls-disable-input-method-desc": "Use a regular keyboard",
+"ext-uls-input-settings-more-languages-tooltip": "More languages",
+"ext-uls-input-more-settings" : "More settings",
+"jquery-ime-other-languages": "Other languages",
+"jquery-ime-disable-text": "Disable input method",
+"jquery-ime-help": "Help",
+"ext-uls-input-disable": "Disable input method tools",
+"ext-uls-input-enable": "Enable input method tools",
+"ext-uls-input-disable-info": "Input method tools are disabled.",
+"ext-uls-input-settings-noime": "No input methods are available for this language."
+}
+
