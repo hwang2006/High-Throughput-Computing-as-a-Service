@@ -232,7 +232,7 @@ ubuntu@ip-172-31-32-76:~$ sudo cp -r /home/ubuntu/high-throughput-computing-as-a
 ubuntu@ip-172-31-32-76:~$ ls /opt/lampp/htdocs
 applications.html  bitnami.css  dashboard  favicon.ico  htcwiki  img  index.php  webalizer
 ```
-12. Edit the LocalSettings.php file in the /opt/lampp/htdocs/htcwiki directory.
+12. Edit the LocalSettings.php file in the /opt/lampp/htdocs/htcwiki directory and restart the lampp server.
 ```
 ubuntu@ip-172-31-32-76:~$ sudo vi /opt/lampp/htdocs/htcwiki/LocalSettings.php
 ...
@@ -248,4 +248,7 @@ $wgDBname           = "htcwikidb";   <=== the htcaas_wiki database name that you
 $wgDBuser           = "root";
 $wgDBpassword       = "**********";
 ...
+
+ubuntu@ip-172-31-32-76:~$ sudo /opt/lampp/lampp restart
 ```
+
