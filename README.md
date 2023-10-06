@@ -251,7 +251,9 @@ $wgDBpassword       = "**********";
 ```
 ubuntu@ip-172-31-32-76:~$ sudo chmod 777 /opt/lampp/htdocs/htcwiki
 
-ubuntu@ip-172-31-32-76:~$ sudo chmod -R 777 /opt/lampp/htdocs/htcwiki/images /opt/lampp/htdocs/htcwiki/cache
+ubuntu@ip-172-31-32-76:~$ sudo chmod -R 777 /opt/lampp/htdocs/htcwiki/images
+
+ubuntu@ip-172-31-32-76:~$ sudo chmod -R 777 /opt/lampp/htdocs/htcwiki/cache
 ```
 14. Edit the index.php file in the /opt/lampp/htdocs. Replace the /dashboard/ with /htcwiki/.
 ```
