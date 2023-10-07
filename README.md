@@ -247,10 +247,8 @@ $wgDBuser           = "root";
 $wgDBpassword       = "**********";
 ...
 ```
-13. Edit the permission of some of the lampp server directory to be writable.
+13. Change the permission of some of the lampp server directory to be writable.
 ```
-ubuntu@ip-172-31-32-76:~$ sudo chmod 777 /opt/lampp/htdocs/htcwiki
-
 ubuntu@ip-172-31-32-76:~$ sudo chmod -R 777 /opt/lampp/htdocs/htcwiki/images
 
 ubuntu@ip-172-31-32-76:~$ sudo chmod -R 777 /opt/lampp/htdocs/htcwiki/cache
