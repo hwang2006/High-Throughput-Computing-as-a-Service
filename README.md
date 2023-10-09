@@ -8,7 +8,7 @@ Please visit the [HTCaaS Wiki Homepage](http://htcaas.kisti.re.kr) deployed on A
  
 ## How to set up the HTCaaS Wiki Homepage on an Apache web server running PHP 5.6+MySQL on AWS EC2
 
-We assume that you have created a Ubuntu 20.04 instance on AWS EC2 with your AWS account. Following is a list of informative sites that you may want to look at to create a Ubuntu 20.04 instance.  
+We assume that you have created a Ubuntu 20.04 instance on AWS EC2 with your AWS account. Following is a list of informative sites that you may want to look at to create a Ubuntu 20.04 instance. Please note that a Ubuntu 22.04 instance should work as well. 
 - [How to Create a Ubuntu 20.04 Server on AWS EC2](https://medium.com/nerd-for-tech/how-to-create-a-ubuntu-20-04-server-on-aws-ec2-elastic-cloud-computing-5b423b5bf635)
 - [Amazon EC2 Setup with Ubuntu and XAMPP Installation](https://medium.com/@RahulShukla754/amazon-ec2-setup-with-ubuntu-and-xampp-installation-37c3c0eeb51d)
 - [Tutorial: Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
@@ -126,7 +126,7 @@ apache2             error         info             logs                   pear  
 bin                 etc           killprocess.bat  man                    php         temp
 build               htdocs        lampp            manager-linux-x64.run  phpmyadmin  uninstall
 ```
-4. Run the XAMPP (lampp) server 
+4. Run the XAMPP (LAMPP) server. Please note that LAMPP stands for Linux, Apache, MariaDB (Or MySQL), PHP and Perl.  
 ```
 ubuntu@ip-172-31-32-76:~$ sudo /opt/lampp/lampp start
 Starting XAMPP for Linux 5.6.40-1...
