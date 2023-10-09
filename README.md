@@ -126,7 +126,7 @@ apache2             error         info             logs                   pear  
 bin                 etc           killprocess.bat  man                    php         temp
 build               htdocs        lampp            manager-linux-x64.run  phpmyadmin  uninstall
 ```
-4. Run the XAMPP (LAMPP) server. Please note that LAMPP stands for Linux, Apache, MariaDB (Or MySQL), PHP and Perl.  
+4. Run the XAMPP (LAMPP) server. Please note that LAMPP stands for Linux, Apache, MariaDB (or MySQL), PHP and Perl.  
 ```
 ubuntu@ip-172-31-32-76:~$ sudo /opt/lampp/lampp start
 Starting XAMPP for Linux 5.6.40-1...
